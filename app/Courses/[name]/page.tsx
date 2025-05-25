@@ -104,9 +104,9 @@ export default function Page({ params }: { params: { name: string } }) {
 
         if (question?.correctOption == chosen) {
             setScore(score + 1);
-            trigSuccessInput.fire();
+            if (trigSuccessInput) trigSuccessInput.fire();
         } else {
-            trigFailInput.fire();
+            if (trigFailInput) trigFailInput.fire();
         }
 
         setQuestion(content?.questions[count + 1]);
@@ -136,7 +136,7 @@ export default function Page({ params }: { params: { name: string } }) {
                 <>
                     <div className="rive-container">
                         <div className="rive-wrapper">
-                            <RiveComponent className="rive-container" />
+                            {progress < 110 && <RiveComponent className="rive-container" />}
                         </div>
                     </div>
                     <div className='flex flex-col mt-5 items-center h-screen gap-6'>
