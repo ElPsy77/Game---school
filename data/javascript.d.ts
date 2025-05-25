@@ -1,104 +1,104 @@
 export const data = {
     "questions": [
         {
-            "question": "What does JS stand for?",
+            "question": "Что означает Unity?",
             "options": [
-                "JavaScript",
-                "Java Source",
-                "Joomla Script",
-                "JustScript"
+                "Игровой движок",
+                "Программа для редактирования видео",
+                "Операционная система",
+                "Язык программирования"
             ],
-            "correctOption": "JavaScript"
+            "correctOption": "Игровой движок"
         },
         {
-            "question": "Which keyword is used to declare a variable in JavaScript?",
+            "question": "Какой язык программирования чаще всего используется в Unity?",
             "options": [
-                "var",
-                "variable",
-                "int",
-                "declare"
+                "C#",
+                "Java",
+                "Python",
+                "C++"
             ],
-            "correctOption": "var"
+            "correctOption": "C#"
         },
         {
-            "question": "What is the purpose of the 'typeof' operator in JavaScript?",
+            "question": "Для чего используется компонент Transform в Unity?",
             "options": [
-                "To check the type of a variable",
-                "To create a new type",
-                "To compare types",
-                "To convert a variable to a different type"
+                "Для управления положением, вращением и масштабом объекта",
+                "Для создания анимаций",
+                "Для управления звуком",
+                "Для работы с физикой"
             ],
-            "correctOption": "To check the type of a variable"
+            "correctOption": "Для управления положением, вращением и масштабом объекта"
         },
         {
-            "question": "Which loop is used for iterating over the properties of an object in JavaScript?",
+            "question": "Какой компонент используется для отображения 3D-модели в Unity?",
             "options": [
-                "for-in loop",
-                "while loop",
-                "do-while loop",
-                "for loop"
+                "Mesh Renderer",
+                "Audio Source",
+                "Rigidbody",
+                "Camera"
             ],
-            "correctOption": "for-in loop"
+            "correctOption": "Mesh Renderer"
         },
         {
-            "question": "What is the purpose of the 'this' keyword in JavaScript?",
+            "question": "Что такое Prefab в Unity?",
             "options": [
-                "To refer to the current object",
-                "To create a new object",
-                "To refer to the global object",
-                "To declare a function"
+                "Шаблон объекта, который можно многократно использовать",
+                "Файл конфигурации проекта",
+                "Скрипт для управления объектами",
+                "Формат файла для текстур"
             ],
-            "correctOption": "To refer to the current object"
+            "correctOption": "Шаблон объекта, который можно многократно использовать"
         },
         {
-            "question": "Which method is used to add a new element to the end of an array in JavaScript?",
+            "question": "Какой компонент используется для добавления физики объекту в Unity?",
             "options": [
-                "push()",
-                "append()",
-                "addToEnd()",
-                "insertAtEnd()"
+                "Rigidbody",
+                "Collider",
+                "Animator",
+                "Light"
             ],
-            "correctOption": "push()"
+            "correctOption": "Rigidbody"
         },
         {
-            "question": "What is the purpose of the 'try...catch' statement in JavaScript?",
+            "question": "Для чего используется Unity Asset Store?",
             "options": [
-                "To declare a function",
-                "To handle exceptions",
-                "To create a loop",
-                "To define a variable"
+                "Для покупки и загрузки готовых ресурсов",
+                "Для создания новых проектов",
+                "Для редактирования скриптов",
+                "Для тестирования игр"
             ],
-            "correctOption": "To handle exceptions"
+            "correctOption": "Для покупки и загрузки готовых ресурсов"
         },
         {
-            "question": "Which operator is used for strict equality in JavaScript?",
+            "question": "Какой метод вызывается при запуске сцены в Unity?",
             "options": [
-                "===",
-                "==",
-                "=*=",
-                "!=="
+                "Start()",
+                "Update()",
+                "Awake()",
+                "OnEnable()"
             ],
-            "correctOption": "==="
+            "correctOption": "Start()"
         },
         {
-            "question": "What is the purpose of the 'setTimeout' function in JavaScript?",
+            "question": "Какой компонент используется для добавления звука в Unity?",
             "options": [
-                "To set a timeout for a function to execute",
-                "To define a style timeout",
-                "To create a delay in the document flow",
-                "To set a timeout for AJAX requests"
+                "Audio Source",
+                "Audio Listener",
+                "Sound Manager",
+                "Audio Mixer"
             ],
-            "correctOption": "To set a timeout for a function to execute"
+            "correctOption": "Audio Source"
         },
         {
-            "question": "Which built-in object is used for handling and manipulating dates in JavaScript?",
+            "question": "Какой инструмент используется для создания анимаций в Unity?",
             "options": [
-                "Date",
-                "Time",
-                "Clock",
-                "Calendar"
+                "Animator",
+                "Timeline",
+                "Physics",
+                "NavMesh"
             ],
-            "correctOption": "Date"
+            "correctOption": "Animator"
         }
     ]
 }

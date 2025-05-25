@@ -23,6 +23,7 @@
     "lucide-react": "^0.295.0",
     "next": "14.0.3",
     "next-themes": "^0.2.1",
+    "openai": "^4.103.0",
     "react": "^18",
     "react-canvas-confetti": "^1.4.0",
     "react-dom": "^18",

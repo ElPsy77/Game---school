@@ -1,105 +1,104 @@
 export const data = {
-    "questions": [
-      {
-        "question": "What is the primary purpose of Azure DevOps in software development?",
-        "options": [
-          "Managing code repositories",
-          "Automating software deployment",
-          "Facilitating collaboration among development teams",
-          "Monitoring application performance"
-        ],
-        "correctOption": "Facilitating collaboration among development teams"
-      },
-      {
-        "question": "How can you define a CI/CD pipeline in Azure DevOps?",
-        "options": [
-          "By configuring build tasks in Visual Studio Code",
-          "By writing custom PowerShell scripts",
-          "By using the Azure DevOps YAML pipeline syntax",
-          "By manually triggering deployments in the Azure portal"
-        ],
-        "correctOption": "By using the Azure DevOps YAML pipeline syntax"
-      },
-      {
-        "question": "In Azure DevOps, what is the purpose of 'Release Gates'?",
-        "options": [
-          "To control access to release environments",
-          "To enforce coding standards in the repository",
-          "To add delay between stages in a pipeline",
-          "To enable automatic validation before progressing to the next stage"
-        ],
-        "correctOption": "To enable automatic validation before progressing to the next stage"
-      },
-      {
-        "question": "How does Azure DevOps handle version control for source code?",
-        "options": [
-          "By using Git repositories hosted on Azure DevOps",
-          "By relying on external version control systems",
-          "By manually managing code versions in local directories",
-          "By storing code only in local servers without versioning"
-        ],
-        "correctOption": "By using Git repositories hosted on Azure DevOps"
-      },
-      {
-        "question": "What is the purpose of the 'Build Agents' in Azure DevOps pipelines?",
-        "options": [
-          "To manually inspect code changes before building",
-          "To execute build and deployment tasks on hosted or private machines",
-          "To enforce coding conventions during the build process",
-          "To automatically fix code issues before deployment"
-        ],
-        "correctOption": "To execute build and deployment tasks on hosted or private machines"
-      },
-      {
-        "question": "How can you trigger a build in Azure DevOps when changes are pushed to a specific branch?",
-        "options": [
-          "By scheduling builds at fixed intervals",
-          "By using webhooks to monitor repository changes",
-          "By manually initiating builds in the Azure DevOps portal",
-          "By configuring branch policies in the repository"
-        ],
-        "correctOption": "By configuring branch policies in the repository"
-      },
-      {
-        "question": "In Azure DevOps, what is the purpose of 'Artifacts'?",
-        "options": [
-          "To store and share binary dependencies",
-          "To create graphical representations of deployment pipelines",
-          "To generate code documentation",
-          "To manage access control for DevOps projects"
-        ],
-        "correctOption": "To store and share binary dependencies"
-      },
-      {
-        "question": "What is the role of 'Service Connections' in Azure DevOps?",
-        "options": [
-          "To establish secure connections to external APIs",
-          "To enable communication between Azure services",
-          "To integrate third-party authentication providers",
-          "To define connections to external services like Azure subscription or container registry"
-        ],
-        "correctOption": "To define connections to external services like Azure subscription or container registry"
-      },
-      {
-        "question": "How can you enforce code quality checks in an Azure DevOps pipeline?",
-        "options": [
-          "By configuring policies in the Azure portal",
-          "By using external code analysis tools",
-          "By disabling automatic builds",
-          "By relying solely on manual code reviews"
-        ],
-        "correctOption": "By using external code analysis tools"
-      },
-      {
-        "question": "What is the purpose of the 'Azure Boards' feature in Azure DevOps?",
-        "options": [
-          "To define infrastructure as code",
-          "To manage and track work items, sprints, and backlogs",
-          "To monitor application logs",
-          "To create and manage virtual machines in Azure"
-        ],
-        "correctOption": "To manage and track work items, sprints, and backlogs"
-      }
-    ]
+  "questions": [
+    {
+    "question": "Какова основная цель использования Lua в разработке программного обеспечения?",
+    "options": [
+      "Управление репозиториями кода",
+      "Создание скриптов для автоматизации",
+      "Обеспечение взаимодействия между модулями",
+      "Мониторинг производительности приложений"
+    ],
+    "correctOption": "Создание скриптов для автоматизации"
+    },
+    {
+    "question": "Как можно определить функцию в Lua?",
+    "options": [
+      "Используя ключевое слово `function`",
+      "С помощью ключевого слова `def`",
+      "Через оператор `lambda`",
+      "Используя ключевое слово `func`"
+    ],
+    "correctOption": "Используя ключевое слово `function`"
+    },
+    {
+    "question": "Что такое таблицы в Lua?",
+    "options": [
+      "Это массивы с фиксированным размером",
+      "Это структуры данных, которые могут хранить ключи и значения",
+      "Это только числовые массивы",
+      "Это объекты, используемые для управления памятью"
+    ],
+    "correctOption": "Это структуры данных, которые могут хранить ключи и значения"
+    },
+    {
+    "question": "Как в Lua можно выполнить итерацию по таблице?",
+    "options": [
+      "С помощью цикла `for` и функции `pairs`",
+      "Используя цикл `while`",
+      "С помощью ключевого слова `foreach`",
+      "Используя встроенную функцию `iterate`"
+    ],
+    "correctOption": "С помощью цикла `for` и функции `pairs`"
+    },
+    {
+    "question": "Как в Lua можно объявить локальную переменную?",
+    "options": [
+      "Используя ключевое слово `local`",
+      "С помощью ключевого слова `var`",
+      "Через ключевое слово `let`",
+      "Используя ключевое слово `global`"
+    ],
+    "correctOption": "Используя ключевое слово `local`"
+    },
+    {
+    "question": "Как в Lua можно вызвать функцию из модуля?",
+    "options": [
+      "Используя оператор `:`",
+      "С помощью оператора `.`",
+      "Через ключевое слово `import`",
+      "С помощью ключевого слова `require`"
+    ],
+    "correctOption": "С помощью ключевого слова `require`"
+    },
+    {
+    "question": "Что такое метатаблицы в Lua?",
+    "options": [
+      "Это таблицы, которые используются для управления метаданными",
+      "Это таблицы, которые содержат только числа",
+      "Это таблицы, которые автоматически очищаются",
+      "Это таблицы, которые используются для хранения глобальных переменных"
+    ],
+    "correctOption": "Это таблицы, которые используются для управления метаданными"
+    },
+    {
+    "question": "Как в Lua можно обработать ошибку во время выполнения?",
+    "options": [
+      "С помощью функции `pcall`",
+      "Используя ключевое слово `try`",
+      "Через ключевое слово `catch`",
+      "С помощью функции `errorHandler`"
+    ],
+    "correctOption": "С помощью функции `pcall`"
+    },
+    {
+    "question": "Как в Lua можно объединить строки?",
+    "options": [
+      "С помощью оператора `..`",
+      "Используя оператор `+`",
+      "Через функцию `concat`",
+      "С помощью ключевого слова `append`"
+    ],
+    "correctOption": "С помощью оператора `..`"
+    },
+    {
+    "question": "Какова основная цель использования функции `require` в Lua?",
+    "options": [
+      "Для подключения модулей",
+      "Для объявления переменных",
+      "Для выполнения циклов",
+      "Для обработки ошибок"
+    ],
+    "correctOption": "Для подключения модулей"
+    }
+  ]
   }
-  

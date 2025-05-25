@@ -1,104 +1,104 @@
 export const data = {
     "questions": [
         {
-            "question": "What does TS stand for in TypeScript?",
+            "question": "Что означает C#?",
             "options": [
-                "TypeScript",
-                "TypeStyle",
-                "TypedScript",
-                "TypeScripting"
+                "C Sharp",
+                "C Hash",
+                "C Plus",
+                "C Star"
             ],
-            "correctOption": "TypeScript"
+            "correctOption": "C Sharp"
         },
         {
-            "question": "Which keyword is used to declare a strongly-typed variable in TypeScript?",
+            "question": "Какой ключевое слово используется для объявления переменной в C#?",
             "options": [
-                "let",
                 "var",
+                "let",
                 "const",
-                "type"
+                "dim"
             ],
-            "correctOption": "let"
+            "correctOption": "var"
         },
         {
-            "question": "What is the purpose of the 'interface' keyword in TypeScript?",
+            "question": "Для чего используется ключевое слово 'interface' в C#?",
             "options": [
-                "To declare a class",
-                "To create a new type",
-                "To define a function",
-                "To declare a variable"
+                "Для создания интерфейса",
+                "Для объявления переменной",
+                "Для определения класса",
+                "Для создания функции"
             ],
-            "correctOption": "To create a new type"
+            "correctOption": "Для создания интерфейса"
         },
         {
-            "question": "Which loop is used for iterating over the elements of an array in TypeScript?",
+            "question": "Какой цикл используется для перебора элементов массива в C#?",
             "options": [
-                "for loop",
-                "while loop",
-                "do-while loop",
-                "for...of loop"
+                "for",
+                "foreach",
+                "while",
+                "do-while"
             ],
-            "correctOption": "for...of loop"
+            "correctOption": "foreach"
         },
         {
-            "question": "What is the purpose of the 'class' keyword in TypeScript?",
+            "question": "Для чего используется ключевое слово 'class' в C#?",
             "options": [
-                "To define a function",
-                "To declare a variable",
-                "To create a new type",
-                "To define a class"
+                "Для определения класса",
+                "Для объявления переменной",
+                "Для создания интерфейса",
+                "Для определения функции"
             ],
-            "correctOption": "To define a class"
+            "correctOption": "Для определения класса"
         },
         {
-            "question": "Which keyword is used to indicate that a variable may have a null or undefined value in TypeScript?",
+            "question": "Какой оператор используется для проверки равенства в C#?",
             "options": [
-                "nullable",
-                "optional",
-                "undefined",
-                "null"
-            ],
-            "correctOption": "nullable"
-        },
-        {
-            "question": "What is the purpose of the 'try...catch' statement in TypeScript?",
-            "options": [
-                "To declare a function",
-                "To handle exceptions",
-                "To create a loop",
-                "To define a variable"
-            ],
-            "correctOption": "To handle exceptions"
-        },
-        {
-            "question": "Which operator is used for strict equality in TypeScript?",
-            "options": [
-                "===",
                 "==",
-                "!==",
-                "=*="
+                "===",
+                "!=",
+                "="
             ],
-            "correctOption": "==="
+            "correctOption": "=="
         },
         {
-            "question": "What is the purpose of the 'namespace' keyword in TypeScript?",
+            "question": "Для чего используется конструкция 'try...catch' в C#?",
             "options": [
-                "To create a new variable scope",
-                "To define a class",
-                "To organize code into modules",
-                "To declare a function"
+                "Для обработки исключений",
+                "Для создания цикла",
+                "Для определения переменной",
+                "Для объявления функции"
             ],
-            "correctOption": "To organize code into modules"
+            "correctOption": "Для обработки исключений"
         },
         {
-            "question": "Which built-in object is used for handling and manipulating dates in TypeScript?",
+            "question": "Какой встроенный объект используется для работы с датами в C#?",
             "options": [
+                "DateTime",
                 "Date",
                 "Time",
-                "Clock",
                 "Calendar"
             ],
-            "correctOption": "Date"
+            "correctOption": "DateTime"
+        },
+        {
+            "question": "Для чего используется пространство имен (namespace) в C#?",
+            "options": [
+                "Для организации кода в модули",
+                "Для определения класса",
+                "Для создания переменной",
+                "Для объявления функции"
+            ],
+            "correctOption": "Для организации кода в модули"
+        },
+        {
+            "question": "Какой модификатор доступа делает член класса доступным только внутри этого класса в C#?",
+            "options": [
+                "private",
+                "public",
+                "protected",
+                "internal"
+            ],
+            "correctOption": "private"
         }
     ]
 }

@@ -1,104 +1,104 @@
 export const data = {
     "questions": [
         {
-            "question": "What does CSS stand for?",
+            "question": "Что означает C++?",
             "options": [
-                "Cascading Style Sheet",
-                "Computer Style Sheet",
-                "Creative Style Sheet",
-                "Colorful Style Sheet"
+                "Объектно-ориентированный язык программирования",
+                "Язык программирования для веб-разработки",
+                "Язык программирования для работы с базами данных",
+                "Язык программирования для создания игр"
             ],
-            "correctOption": "Cascading Style Sheet"
+            "correctOption": "Объектно-ориентированный язык программирования"
         },
         {
-            "question": "Which property is used to change the background color of an element in CSS?",
+            "question": "Какой оператор используется для вывода данных в C++?",
             "options": [
-                "background-color",
-                "color",
-                "bgcolor",
-                "background"
+                "cout",
+                "cin",
+                "print",
+                "output"
             ],
-            "correctOption": "background-color"
+            "correctOption": "cout"
         },
         {
-            "question": "What is the purpose of the 'box-sizing' property in CSS?",
+            "question": "Что такое указатель в C++?",
             "options": [
-                "To define the size of a box",
-                "To include/exclude borders and padding in the total width/height of an element",
-                "To set the border size of an element",
-                "To control the spacing between elements"
+                "Переменная, которая хранит адрес другой переменной",
+                "Переменная, которая хранит значение другого типа",
+                "Функция для работы с массивами",
+                "Оператор для работы с памятью"
             ],
-            "correctOption": "To include/exclude borders and padding in the total width/height of an element"
+            "correctOption": "Переменная, которая хранит адрес другой переменной"
         },
         {
-            "question": "Which selector is used to select all elements with a specific class in CSS?",
+            "question": "Какой символ используется для комментариев в одну строку в C++?",
             "options": [
-                ".class",
-                "#class",
+                "//",
+                "/*",
+                "#",
+                "--"
+            ],
+            "correctOption": "//"
+        },
+        {
+            "question": "Что такое перегрузка функций в C++?",
+            "options": [
+                "Использование одной функции для разных типов данных",
+                "Использование одной переменной для разных значений",
+                "Использование одной функции для разных классов",
+                "Использование одной функции для разных потоков"
+            ],
+            "correctOption": "Использование одной функции для разных типов данных"
+        },
+        {
+            "question": "Какой оператор используется для динамического выделения памяти в C++?",
+            "options": [
+                "new",
+                "malloc",
+                "alloc",
+                "create"
+            ],
+            "correctOption": "new"
+        },
+        {
+            "question": "Что такое конструктор в C++?",
+            "options": [
+                "Функция, которая вызывается при создании объекта",
+                "Функция, которая вызывается при удалении объекта",
+                "Функция для работы с указателями",
+                "Функция для работы с потоками"
+            ],
+            "correctOption": "Функция, которая вызывается при создании объекта"
+        },
+        {
+            "question": "Какой оператор используется для доступа к членам класса через указатель в C++?",
+            "options": [
+                "->",
+                ".",
+                "::",
+                "=>"
+            ],
+            "correctOption": "->"
+        },
+        {
+            "question": "Что такое инкапсуляция в C++?",
+            "options": [
+                "Сокрытие данных и предоставление доступа через методы",
+                "Использование одной функции для разных классов",
+                "Создание копий объектов",
+                "Использование указателей для работы с памятью"
+            ],
+            "correctOption": "Сокрытие данных и предоставление доступа через методы"
+        },
+        {
+            "question": "Какой ключевое слово используется для создания класса в C++?",
+            "options": [
                 "class",
-                ":class"
+                "struct",
+                "object",
+                "type"
             ],
-            "correctOption": ".class"
-        },
-        {
-            "question": "What is the purpose of the 'display' property in CSS?",
-            "options": [
-                "To control the visibility of an element",
-                "To set the background display of an element",
-                "To define the size of an element",
-                "To define how an element should be displayed"
-            ],
-            "correctOption": "To define how an element should be displayed"
-        },
-        {
-            "question": "Which property is used to add shadow to text in CSS?",
-            "options": [
-                "text-shadow",
-                "box-shadow",
-                "shadow",
-                "font-shadow"
-            ],
-            "correctOption": "text-shadow"
-        },
-        {
-            "question": "What does the 'float' property do in CSS?",
-            "options": [
-                "It makes an element 'float' in the air",
-                "It sets the positioning of an element relative to its parent element",
-                "It clears the float of an element",
-                "It aligns the text within an element"
-            ],
-            "correctOption": "It sets the positioning of an element relative to its parent element"
-        },
-        {
-            "question": "Which CSS property is used for controlling the layout flow of the document?",
-            "options": [
-                "layout",
-                "flow",
-                "position",
-                "display"
-            ],
-            "correctOption": "display"
-        },
-        {
-            "question": "What is the purpose of the 'z-index' property in CSS?",
-            "options": [
-                "To control the color of an element",
-                "To set the z-axis position of an element",
-                "To define the size of an element",
-                "To control the transparency of an element"
-            ],
-            "correctOption": "To set the z-axis position of an element"
-        },
-        {
-            "question": "Which CSS property is used to add rounded corners to an element?",
-            "options": [
-                "border-round",
-                "corner-radius",
-                "border-radius",
-                "round-corner"
-            ],
-            "correctOption": "border-radius"
+            "correctOption": "class"
         }
     ]
 }

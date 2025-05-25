@@ -5,51 +5,47 @@ import styles from "@/styles/home.module.css"
 import { cn } from "@/lib/utils"
 import Link from "next/link"
 import { UserButton } from "@clerk/nextjs"
-import toast, {Toaster} from "react-hot-toast"
+import toast, { Toaster } from "react-hot-toast"
 
 export default function Home() {
-
     return (
         <div className={styles.container}>
             <Toaster />
             <div className={styles.navbar}>
                 <div className={styles.logobar}>
-                    <Image src="/logo.png" width={30} height={30} alt="logo" />
-                    <div className={styles.logoText}>raphifyEd</div>
+                    <Image src="/logo.png" width={40} height={40} alt="logo" />
+                    <div className={styles.logoText}>ameSchool</div>
                 </div>
                 <div className={`${styles.navitems}`}>
-                    <Link href="/Imagen" className={styles.navlist}>
-                        Imagen
+                    
+                    <Link href="/Details" className={styles.navlist}>
+                        Курсы
                     </Link>
-                    <Link href="/Chat" className={styles.navlist}>
-                        Chat
-                    </Link>
-                    <Link href="/Home" className={styles.navlist} onClick={() => toast.success("select a logo to begin the course")}>
-                        Courses
-                    </Link>
-                    <Link href="https://kanugurajesh.github.io" className={styles.navlist}>
-                        Blog
+                    <Link href="https://almatypolytech.edu.kz" className={styles.navlist}>
+                        Блог
                     </Link>
                     <UserButton afterSignOutUrl="/">
-                        Sign out
+                        Выйти
                     </UserButton>
                 </div>
             </div>
             <div className={`${styles.herosection} mt-20`}>
                 <div className={styles.herocontent}>
-                    <div className={styles.heroheading}><h1 className={styles.h1}>What is GraphifyEd</h1>
-
+                    <div className={styles.heroheading}>
+                        <h1 className={styles.h1}>Что за PameSchool</h1>
                     </div>
                     <div className={styles.wrapper}>
                         <p className={`${styles.heroheading} ${styles.p}`}>
-                            GraphifyEd is a unique student learning management system which aims at making learning as addictive as gaming. Start your journey with GraphifyEd and earn points, badges and rewards as you learn.
+                            PameSchool - уникальная система управления обучением студентов, цель которой - сделать обучение таким же увлекательным, как игра. Начните свое путешествие c PameSchool и зарабатывайте баллы, значки и награды по мере обучения.
                         </p>
+                        {/* Кнопка для перехода на страницу курсов */}
                         <Link href="/Courses/html5">
-                            <button className={styles.btnpink}>Select Logo and Learn</button>
+                            <button className={styles.btnpink}>Выберите Лого и Учитесь</button>
                         </Link>
                     </div>
                 </div>
                 <div className={cn(`flex flex-wrap w-[500px] gap-6 p-2 ${styles.heroimg}`)}>
+                    {/* Пример логотипов курсов */}
                     <Link href="/Courses/html5">
                         <Image src="/icons/html5.svg" width={90} height={90} alt="html5" className="transition ease-in-out duration-500 hover:scale-110" />
                     </Link>

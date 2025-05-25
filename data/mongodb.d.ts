@@ -1,104 +1,104 @@
 export const data = {
     "questions": [
         {
-            "question": "What does CRUD stand for in the context of MongoDB?",
+            "question": "Что такое Godot Engine?",
             "options": [
-                "Create, Read, Update, Delete",
-                "Cascading, Retrieving, Updating, Deleting",
-                "Coding, Running, Updating, Debugging",
-                "Configuration, Routing, Understanding, Deployment"
+                "Это инструмент для создания 3D-моделей",
+                "Это игровой движок с открытым исходным кодом",
+                "Это язык программирования для игр",
+                "Это платформа для тестирования игр"
             ],
-            "correctOption": "Create, Read, Update, Delete"
+            "correctOption": "Это игровой движок с открытым исходным кодом"
         },
         {
-            "question": "Which command is used to create a new database in MongoDB?",
+            "question": "Какой язык программирования используется в Godot по умолчанию?",
             "options": [
-                "USE DATABASE",
-                "CREATE DATABASE",
-                "USE",
-                "DB.CREATE()"
+                "Python",
+                "C#",
+                "GDScript",
+                "JavaScript"
             ],
-            "correctOption": "USE"
+            "correctOption": "GDScript"
         },
         {
-            "question": "What is the purpose of the '_id' field in MongoDB documents?",
+            "question": "Что такое сцена (Scene) в Godot?",
             "options": [
-                "It stands for 'identifier' and is used for identification purposes",
-                "It is a reserved keyword for indexing",
-                "It is automatically generated and serves as the primary key",
-                "It is a placeholder for future data"
+                "Это набор узлов (Nodes), организованных в иерархию",
+                "Это отдельный файл для хранения текстур",
+                "Это инструмент для создания анимаций",
+                "Это модуль для работы с физикой"
             ],
-            "correctOption": "It is automatically generated and serves as the primary key"
+            "correctOption": "Это набор узлов (Nodes), организованных в иерархию"
         },
         {
-            "question": "Which operator is used for querying documents with a specified value in MongoDB?",
+            "question": "Какой узел используется для отображения 2D-изображений в Godot?",
             "options": [
-                "$find",
-                "$query",
-                "$match",
-                "$filter"
+                "Sprite",
+                "MeshInstance",
+                "Control",
+                "Camera2D"
             ],
-            "correctOption": "$match"
+            "correctOption": "Sprite"
         },
         {
-            "question": "What is the purpose of the 'findOne' method in MongoDB?",
+            "question": "Что такое узел (Node) в Godot?",
             "options": [
-                "To retrieve all documents in a collection",
-                "To retrieve a single document matching the specified criteria",
-                "To insert a new document into a collection",
-                "To update documents in a collection"
+                "Это базовый строительный блок сцены",
+                "Это инструмент для создания 3D-моделей",
+                "Это файл конфигурации проекта",
+                "Это модуль для работы с сетью"
             ],
-            "correctOption": "To retrieve a single document matching the specified criteria"
+            "correctOption": "Это базовый строительный блок сцены"
         },
         {
-            "question": "Which data type is used to store arrays in MongoDB?",
+            "question": "Какой узел используется для создания пользовательского интерфейса в Godot?",
             "options": [
-                "Array",
-                "List",
-                "Collection",
-                "ArrayObject"
+                "Control",
+                "Sprite",
+                "RigidBody",
+                "AnimationPlayer"
             ],
-            "correctOption": "Array"
+            "correctOption": "Control"
         },
         {
-            "question": "What is sharding in MongoDB?",
+            "question": "Что такое сигнал (Signal) в Godot?",
             "options": [
-                "A technique for encrypting data",
-                "A process of splitting a large database into smaller, more manageable parts",
-                "A method for compressing data",
-                "A feature for sorting documents in a collection"
+                "Это способ связи между узлами",
+                "Это инструмент для создания анимаций",
+                "Это метод для загрузки ресурсов",
+                "Это тип данных для хранения текстур"
             ],
-            "correctOption": "A process of splitting a large database into smaller, more manageable parts"
+            "correctOption": "Это способ связи между узлами"
         },
         {
-            "question": "Which aggregation stage is used for sorting documents in MongoDB?",
+            "question": "Какой узел используется для работы с физикой в 2D в Godot?",
             "options": [
-                "$order",
-                "$sort",
-                "$group",
-                "$arrange"
+                "RigidBody2D",
+                "KinematicBody",
+                "MeshInstance",
+                "Camera2D"
             ],
-            "correctOption": "$sort"
+            "correctOption": "RigidBody2D"
         },
         {
-            "question": "What is the purpose of the 'mongod' process in MongoDB?",
+            "question": "Какой инструмент используется для создания анимаций в Godot?",
             "options": [
-                "It is the primary daemon process for the MongoDB server",
-                "It is a tool for importing data into MongoDB",
-                "It is a client application for querying MongoDB",
-                "It is a web-based interface for managing MongoDB"
+                "AnimationPlayer",
+                "Sprite",
+                "Control",
+                "Viewport"
             ],
-            "correctOption": "It is the primary daemon process for the MongoDB server"
+            "correctOption": "AnimationPlayer"
         },
         {
-            "question": "Which index type is the default for MongoDB?",
+            "question": "Какой файл используется для настройки проекта в Godot?",
             "options": [
-                "Unique Index",
-                "Compound Index",
-                "Sparse Index",
-                "Single Field Index"
+                "project.godot",
+                "config.json",
+                "settings.ini",
+                "project.yaml"
             ],
-            "correctOption": "Single Field Index"
+            "correctOption": "project.godot"
         }
     ]
 }

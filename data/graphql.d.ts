@@ -1,105 +1,104 @@
 export const data = {
-    "questions": [
-      {
-        "question": "What is the primary role of GraphQL in modern API development?",
-        "options": [
-          "Managing code repositories",
-          "Automating software deployment",
-          "Facilitating collaboration among development teams",
-          "Defining a flexible and efficient way to query and manipulate data"
-        ],
-        "correctOption": "Defining a flexible and efficient way to query and manipulate data"
-      },
-      {
-        "question": "How can you execute a GraphQL query for fetching data from a server?",
-        "options": [
-          "By configuring build tasks in Visual Studio Code",
-          "By writing custom PowerShell scripts",
-          "By using the GitHub Actions YAML pipeline syntax",
-          "By sending a POST request to the GraphQL endpoint with the query in the body"
-        ],
-        "correctOption": "By sending a POST request to the GraphQL endpoint with the query in the body"
-      },
-      {
-        "question": "In GraphQL, what is the purpose of the 'schema'?",
-        "options": [
-          "To control access to release environments",
-          "To enforce coding standards in the repository",
-          "To add delay between stages in a pipeline",
-          "To define the types and relationships available in the API"
-        ],
-        "correctOption": "To define the types and relationships available in the API"
-      },
-      {
-        "question": "How does GraphQL handle over-fetching and under-fetching of data compared to traditional REST APIs?",
-        "options": [
-          "By using GraphQL repositories hosted on GraphQL Hub",
-          "By relying on external version control systems",
-          "By manually managing data in local directories",
-          "By allowing clients to request only the data they need, reducing over-fetching and under-fetching"
-        ],
-        "correctOption": "By allowing clients to request only the data they need, reducing over-fetching and under-fetching"
-      },
-      {
-        "question": "What is the purpose of the 'introspection' feature in GraphQL?",
-        "options": [
-          "To manually inspect API configurations before deployment",
-          "To combine configurations from different APIs",
-          "To enforce coding conventions during the build process",
-          "To allow clients to query the schema and discover types and capabilities dynamically"
-        ],
-        "correctOption": "To allow clients to query the schema and discover types and capabilities dynamically"
-      },
-      {
-        "question": "How can you implement real-time functionality in a GraphQL API?",
-        "options": [
-          "By scheduling queries at fixed intervals",
-          "By using webhooks to monitor data changes",
-          "By manually initiating queries in the GraphQL portal",
-          "By using subscriptions to receive real-time updates in response to data changes"
-        ],
-        "correctOption": "By using subscriptions to receive real-time updates in response to data changes"
-      },
-      {
-        "question": "In GraphQL, what is the purpose of 'resolvers'?",
-        "options": [
-          "To store and share binary dependencies",
-          "To create graphical representations of API queries",
-          "To generate API documentation",
-          "To define how to fetch and return data for each field in the schema"
-        ],
-        "correctOption": "To define how to fetch and return data for each field in the schema"
-      },
-      {
-        "question": "What is the role of 'mutations' in a GraphQL workflow?",
-        "options": [
-          "To establish secure connections to external APIs",
-          "To enable communication between GraphQL services",
-          "To integrate third-party authentication providers",
-          "To modify data on the server, such as creating, updating, or deleting records"
-        ],
-        "correctOption": "To modify data on the server, such as creating, updating, or deleting records"
-      },
-      {
-        "question": "How can you perform error handling in GraphQL?",
-        "options": [
-          "By configuring error policies in the GraphQL portal",
-          "By using external error analysis tools",
-          "By executing 'graphql remove'",
-          "By letting the server return a response with an 'errors' field for detailed error information"
-        ],
-        "correctOption": "By letting the server return a response with an 'errors' field for detailed error information"
-      },
-      {
-        "question": "What is the purpose of the '.graphqlconfig' file in a GraphQL project?",
-        "options": [
-          "To define infrastructure as code",
-          "To manage and track work items, sprints, and backlogs",
-          "To specify files and directories to be ignored by GraphQL",
-          "To configure settings related to GraphQL development, such as schema and endpoint information"
-        ],
-        "correctOption": "To configure settings related to GraphQL development, such as schema and endpoint information"
-      }
-    ]
+  "questions": [
+    {
+    "question": "Какова основная роль Postman в разработке API?",
+    "options": [
+      "Управление репозиториями кода",
+      "Автоматизация развертывания программного обеспечения",
+      "Обеспечение гибкого и удобного тестирования API",
+      "Определение структуры базы данных"
+    ],
+    "correctOption": "Обеспечение гибкого и удобного тестирования API"
+    },
+    {
+    "question": "Как можно отправить запрос в Postman для получения данных с сервера?",
+    "options": [
+      "С помощью настройки задач сборки в Visual Studio Code",
+      "С помощью написания пользовательских скриптов PowerShell",
+      "С помощью отправки HTTP-запроса с указанием метода, URL и тела запроса",
+      "С помощью использования YAML-синтаксиса GitHub Actions"
+    ],
+    "correctOption": "С помощью отправки HTTP-запроса с указанием метода, URL и тела запроса"
+    },
+    {
+    "question": "Какова цель коллекций в Postman?",
+    "options": [
+      "Для управления доступом к средам разработки",
+      "Для группировки и организации запросов для удобства тестирования",
+      "Для добавления задержек между этапами в конвейере",
+      "Для создания графических представлений запросов"
+    ],
+    "correctOption": "Для группировки и организации запросов для удобства тестирования"
+    },
+    {
+    "question": "Как Postman помогает в тестировании API?",
+    "options": [
+      "С помощью автоматического управления версиями API",
+      "С помощью предоставления инструментов для написания и выполнения тестов",
+      "С помощью ручного управления данными в локальных директориях",
+      "С помощью интеграции с внешними системами контроля версий"
+    ],
+    "correctOption": "С помощью предоставления инструментов для написания и выполнения тестов"
+    },
+    {
+    "question": "Что такое окружения (environments) в Postman?",
+    "options": [
+      "Файлы конфигурации для развертывания API",
+      "Наборы переменных, которые можно использовать для тестирования в разных контекстах",
+      "Инструменты для анализа производительности API",
+      "Скрипты для автоматизации развертывания"
+    ],
+    "correctOption": "Наборы переменных, которые можно использовать для тестирования в разных контекстах"
+    },
+    {
+    "question": "Как можно реализовать тестирование сценариев в Postman?",
+    "options": [
+      "С помощью настройки вебхуков",
+      "С помощью написания тестов на JavaScript в разделе Tests",
+      "С помощью ручного выполнения запросов",
+      "С помощью использования сторонних инструментов для тестирования"
+    ],
+    "correctOption": "С помощью написания тестов на JavaScript в разделе Tests"
+    },
+    {
+    "question": "Как Postman обрабатывает авторизацию запросов?",
+    "options": [
+      "С помощью хранения бинарных зависимостей",
+      "С помощью предоставления различных методов авторизации, таких как OAuth, API Key и Basic Auth",
+      "С помощью генерации документации API",
+      "С помощью создания графических представлений запросов"
+    ],
+    "correctOption": "С помощью предоставления различных методов авторизации, таких как OAuth, API Key и Basic Auth"
+    },
+    {
+    "question": "Что такое мониторинг в Postman?",
+    "options": [
+      "Инструмент для управления подключениями к внешним API",
+      "Функция для выполнения запросов по расписанию и отслеживания их результатов",
+      "Интеграция с провайдерами аутентификации",
+      "Инструмент для анализа ошибок в API"
+    ],
+    "correctOption": "Функция для выполнения запросов по расписанию и отслеживания их результатов"
+    },
+    {
+    "question": "Как Postman помогает в обработке ошибок?",
+    "options": [
+      "С помощью настройки политик обработки ошибок",
+      "С помощью предоставления детальной информации об ошибках в ответах сервера",
+      "С помощью выполнения команды 'postman remove'",
+      "С помощью использования внешних инструментов анализа ошибок"
+    ],
+    "correctOption": "С помощью предоставления детальной информации об ошибках в ответах сервера"
+    },
+    {
+    "question": "Какова цель документации в Postman?",
+    "options": [
+      "Для управления инфраструктурой как кодом",
+      "Для отслеживания задач и спринтов",
+      "Для автоматического создания и публикации документации по API",
+      "Для настройки файлов и директорий, игнорируемых Postman"
+    ],
+    "correctOption": "Для автоматического создания и публикации документации по API"
+    }
+  ]
   }
-  

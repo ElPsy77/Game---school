@@ -21,7 +21,6 @@ export default function Page({ params }: { params: { name: string } }) {
 
     const name = params.name;
 
-    // const [score, setScore] = useState(0);
     const [score, setScore] = useState(0);
     const [count, setCount] = useState(0);
     const [chosen, setChosen] = useState();
@@ -33,32 +32,31 @@ export default function Page({ params }: { params: { name: string } }) {
     const inputRef = useRef(null);
 
     const [response, setResponse] = useState("");
-    const [output, setOutput] = useState("The response will appear here...");
+    const [output, setOutput] = useState("Ответ появится здесь...");
 
     const onSubmit = async () => {
+        // Очистить вывод
+        setOutput("Ответ появится здесь...");
 
-        // clear the output
-        setOutput("The response will appear here...");
-
-        // create a post request to the /api/chat endpoint
+        // Создать POST-запрос к конечной точке /api/chat
         const response = await fetch("/api/chat", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                userPrompt: `hello I have obtained a score of ${score}/${content?.questions.length} in ${name} based on my performance I would like to learn ${name} can you suggest me a learning path?`,
+                userPrompt: `Привет! Я набрал ${score}/${content?.questions.length} баллов в курсе ${name}. На основе моего результата, можете предложить мне путь обучения для изучения ${name}?`,
             }),
         });
 
-        // get the response from the server
+        // Получить ответ от сервера
         const data = await response.json();
-        // set the response in the state
+        // Установить ответ в состояние
         setResponse(data.text);
     };
 
     useEffect(() => {
-        // update the response character by character in the output
+        // Обновить ответ символ за символом в выводе
         if (response.length === 0) return;
 
         setOutput("");
@@ -89,38 +87,34 @@ export default function Page({ params }: { params: { name: string } }) {
         }),
     });
 
-    // State Machine Inputs
+    // Входные данные для State Machine
     const trigSuccessInput: StateMachineInput = useStateMachineInput(riveInstance, STATE_MACHINE_NAME, 'trigSuccess');
     const trigFailInput: StateMachineInput = useStateMachineInput(riveInstance, STATE_MACHINE_NAME, 'trigFail');
     const isHandsUpInput: StateMachineInput = useStateMachineInput(riveInstance, STATE_MACHINE_NAME, 'isHandsUp');
 
-    // read the file from the file system with the `name`
+    // Прочитать файл из файловой системы с именем `name`
     const readFile = async (name: string) => {
         const markdown = await import(`@/data/${name}.d.ts`);
         return markdown.data;
-    }
+    };
 
     const onNext = () => {
-
-        setProgress(progress + 10)
-
-        setCount(count + 1)
+        setProgress(progress + 10);
+        setCount(count + 1);
 
         if (question?.correctOption == chosen) {
-            setScore(score + 1)
-            trigSuccessInput.fire()
+            setScore(score + 1);
+            trigSuccessInput.fire();
         } else {
-            trigFailInput.fire()
+            trigFailInput.fire();
         }
 
-        setQuestion(content?.questions[count + 1])
-
+        setQuestion(content?.questions[count + 1]);
 
         if (progress >= 100) {
-            onSubmit()
-            return
+            onSubmit();
+            return;
         }
-
     }
 
     useEffect(() => {
@@ -130,7 +124,7 @@ export default function Page({ params }: { params: { name: string } }) {
                 setQuestion(content?.questions[0]);
                 setContent(content);
             } catch (error) {
-                console.error("Error reading file:", error);
+                console.error("Ошибка при чтении файла:", error);
             }
         };
         fetchData();
@@ -180,24 +174,24 @@ export default function Page({ params }: { params: { name: string } }) {
                         <Button onClick={() => {
                             onNext()
                         }
-                        }>{progress <= 110 ? "Next" : "Submit"}</Button>
+                        }>{progress <= 110 ? "Далее" : "Отправить"}</Button>
                     </div>
                 </>
             ) : (
                 <div className='flex flex-col items-center h-screen gap-6'>
-                    <h1 className='text-2xl mt-2 font-bold'>You scored {score} out of {content?.questions.length}</h1>
+                    <h1 className='text-2xl mt-2 font-bold'>Вы набрали {score} из {content?.questions.length}</h1>
                     <Button onClick={() => {
                         setProgress(10)
                         setScore(0)
                         setCount(0)
                         setQuestion(content?.questions[0])
                     }
-                    }>Restart</Button>
+                    }>Начать заново</Button>
                     {score > 6 && (
                         <>
                             <Confetti />
                             <div className="flex items-center flex-col gap-5">
-                                <h1 className='text-2xl font-bold'>Congratulations! You have obtained a <span className="font-black text-red-500">Gold medal</span></h1>
+                                <h1 className='text-2xl font-bold'>Поздравляем! Вы получили <span className="font-black text-red-500">Золотую медаль</span></h1>
                                 <Image src="/icons/goldmedal.svg" width={100} height={100} />
                             </div>
                         </>
@@ -206,7 +200,7 @@ export default function Page({ params }: { params: { name: string } }) {
                         <>
                             <Confetti />
                             <div className="flex items-center flex-col gap-5">
-                                <h1 className='text-2xl font-bold'>Congratulations! You have obtained a <span className="font-black text-red-500">Silver Medal</span></h1>
+                                <h1 className='text-2xl font-bold'>Поздравляем! Вы получили <span className="font-black text-red-500">Серебряную медаль</span></h1>
                                 <Image src="/icons/silvermedal.svg" width={100} height={100} />
                             </div>
                         </>
@@ -215,21 +209,31 @@ export default function Page({ params }: { params: { name: string } }) {
                         <>
                             <Confetti />
                             <div className="flex items-center flex-col gap-5">
-                                <h1 className='text-2xl font-bold'>Congratulations! You have obtained a <span className="font-black text-red-500">Bronze Medal</span></h1>
+                                <h1 className='text-2xl font-bold'>Поздравляем! Вы получили <span className="font-black text-red-500">Бронзовую медаль</span></h1>
                                 <Image src="/icons/bronzemedal.svg" width={100} height={100} />
                             </div>
                         </>
                     )}
-                    <h1 className='text-1xl font-bold mt-1'>Based on you performance we are creating a learning path to learn <span className="text-red-500">{name}</span></h1>
+                    <h1 className='text-1xl font-bold mt-1'>На основе вашего результата мы создаем путь обучения для изучения </h1>
                     <Card className={cn("p-5 whitespace-normal min-w-[320px] sm:w-[500px] md:min-w-[600px]")}>
                         <div className={styles.textwrapper}>
                             <Markdown className={cn("w-full h-full ")}>{`${output}`}</Markdown>
                         </div>
                     </Card>
-                    {/* create a Link to redirect to /leaderboard */}
+                    {/* Создать ссылку для перехода на /leaderboard */}
                     <Link href="/Leaderboard">
-                        <Button>Go to Leaderboard</Button>
+                        <Button>Перейти к таблице лидеров</Button>
                     </Link>
+                    <div className="flex gap-4 mt-4">
+                        {/* Кнопка для возврата на главную страницу */}
+                        <Link href="/">
+                            <Button>Вернуться на главную</Button>
+                        </Link>
+                        {/* Кнопка для возврата ко всем курсам */}
+                        <Link href="/Home">
+                            <Button>Вернуться ко всем курсам</Button>
+                        </Link>
+                    </div>
                 </div>
             )}
         </div>

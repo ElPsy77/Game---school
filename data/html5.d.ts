@@ -1,104 +1,104 @@
 export const data = {
     "questions": [
         {
-            "question": "What does HTML stand for?",
+            "question": "Для чего в основном используется Unreal Engine 5?",
             "options": [
-                "Hyper Text Markup Language",
-                "Hyperlinks and Text Markup Language",
-                "Home Tool Markup Language",
-                "None of the above"
+                "Разработка игр",
+                "Веб-разработка",
+                "Анализ данных",
+                "Разработка мобильных приложений"
             ],
-            "correctOption": "Hyper Text Markup Language"
+            "correctOption": "Разработка игр"
         },
         {
-            "question": "Which tag is used to define an HTML table?",
+            "question": "Какая функция в Unreal Engine 5 позволяет создавать высокодетализированные окружения?",
             "options": [
-                "<table>",
-                "<tr>",
-                "<td>",
-                "<th>"
+                "Nanite",
+                "Lumen",
+                "Blueprints",
+                "Chaos Physics"
             ],
-            "correctOption": "<table>"
+            "correctOption": "Nanite"
         },
         {
-            "question": "Which attribute is used to specify that an input field must be filled out?",
+            "question": "Какая система в Unreal Engine 5 используется для глобального освещения в реальном времени?",
             "options": [
-                "required",
-                "validate",
-                "mandatory",
-                "fill"
+                "Lumen",
+                "Nanite",
+                "Cascade",
+                "Sequencer"
             ],
-            "correctOption": "required"
+            "correctOption": "Lumen"
         },
         {
-            "question": "Which tag is used to define a hyperlink in HTML?",
+            "question": "Какой язык используется в Unreal Engine 5 для визуального скриптинга?",
             "options": [
-                "<a>",
-                "<link>",
-                "<href>",
-                "<url>"
+                "Blueprints",
+                "C++",
+                "Python",
+                "JavaScript"
             ],
-            "correctOption": "<a>"
+            "correctOption": "Blueprints"
         },
         {
-            "question": "Which tag is used to define a list item in HTML?",
+            "question": "Какой инструмент в Unreal Engine 5 используется для создания кинематографических последовательностей?",
             "options": [
-                "<li>",
-                "<ul>",
-                "<ol>",
-                "<dl>"
+                "Sequencer",
+                "Matinee",
+                "Timeline",
+                "Director"
             ],
-            "correctOption": "<li>"
+            "correctOption": "Sequencer"
         },
         {
-            "question": "Which attribute is used to specify the URL of the image in the <img> tag?",
+            "question": "Какой формат файла обычно используется для импорта 3D-моделей в Unreal Engine 5?",
             "options": [
-                "src",
-                "href",
-                "link",
-                "url"
+                "FBX",
+                "OBJ",
+                "STL",
+                "GLTF"
             ],
-            "correctOption": "src"
+            "correctOption": "FBX"
         },
         {
-            "question": "Which tag is used to define the header of a section or article in HTML5?",
+            "question": "Какая физическая система интегрирована в Unreal Engine 5?",
             "options": [
-                "<header>",
-                "<h1>",
-                "<head>",
-                "<section>"
+                "Chaos Physics",
+                "Havok",
+                "PhysX",
+                "Bullet"
             ],
-            "correctOption": "<header>"
+            "correctOption": "Chaos Physics"
         },
         {
-            "question": "Which tag is used to define a line break in HTML?",
+            "question": "Как называется магазин ассетов для Unreal Engine?",
             "options": [
-                "<br>",
-                "<lb>",
-                "<break>",
-                "<newline>"
+                "Unreal Marketplace",
+                "Epic Store",
+                "Asset Hub",
+                "Game Dev Market"
             ],
-            "correctOption": "<br>"
+            "correctOption": "Unreal Marketplace"
         },
         {
-            "question": "Which attribute is used to specify the target URL for the link in the <a> tag?",
+            "question": "Какой язык программирования в основном используется для скриптинга в Unreal Engine 5?",
             "options": [
-                "href",
-                "src",
-                "link",
-                "url"
+                "C++",
+                "C#",
+                "Python",
+                "Java"
             ],
-            "correctOption": "href"
+            "correctOption": "C++"
         },
         {
-            "question": "Which tag is used to define a paragraph in HTML?",
+            "question": "Какая единица измерения используется по умолчанию в Unreal Engine 5?",
             "options": [
-                "<p>",
-                "<para>",
-                "<paragraph>",
-                "<text>"
+                "Сантиметры",
+                "Метры",
+                "Дюймы",
+                "Футы"
             ],
-            "correctOption": "<p>"
+            "correctOption": "Сантиметры"
         }
     ]
 }

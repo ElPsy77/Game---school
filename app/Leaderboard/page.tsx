@@ -8,23 +8,23 @@ export default function LeaderboardPage() {
             <Card className='p-20'>
                 <table>
                     <tr>
-                        <th>Username</th>
-                        <th>Score</th>
+                        <th>Имя</th>
+                        <th>Очки</th>
                     </tr>
                     <tr>
-                        <td>Rajesh</td>
+                        <td>Макжан</td>
                         <td>500pts</td>
                     </tr>
                     <tr>
-                        <td>Shravan</td>
+                        <td>Александр</td>
                         <td>400pts</td>
                     </tr>
                     <tr>
-                        <td>madhur</td>
+                        <td>Абдурахман</td>
                         <td>300pts</td>
                     </tr>
                     <tr>
-                        <td>yashwanth</td>
+                        <td>Кирилл</td>
                         <td>200pts</td>
                     </tr>
                 </table>
